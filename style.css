@@ -1,0 +1,308 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,500&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a,
+p,
+li,
+span{
+    font-size: 15px;
+}
+
+.container{
+    width: 1120px;
+}
+/* header  */
+header{
+    color: #3A3A3A;
+    margin-left: 7.7em;
+    margin-top: 3em;
+}
+
+
+/*-----------------
+ welcome-section
+--------------- */
+.influencer-title{
+    margin-left: 3.2rem;
+}
+
+.welcome-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    
+}
+.welcome-part h1{
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+
+.welcome-part p{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.welcome-image{
+    width: 100%;
+    transform: scale(0.9);
+    transition: all .6s;
+    margin-left: 5rem;
+}
+.welcome-image:hover{
+    transform: scale(1);
+}
+.button a{
+    text-decoration: none;
+}
+.button{
+    position: absolute;
+    background-color: plum;
+    
+    border-style: solid;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+
+/*------------------
+ Popular-Collection
+ ---------------- */
+ .popular-collection{
+     text-align: center;
+     margin-top: 10rem;
+     margin-bottom: 3rem;
+     font-size: 30px;
+ }
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap:3rem;  
+}
+
+.product {
+    box-shadow: 0px 0px 14px 8px #ddd;
+    padding: 15px;
+}
+.product img{
+    width: 100%;
+}
+.products p {
+    text-align: justify;
+    padding-bottom: 16px;
+    line-height: 26px;
+    color: #6d6a6a;
+}
+
+.fa-star.filled{
+    color: #FB8200;
+    font-size: 10px;
+}
+.fa-star.empty{
+    color: rgb(112, 106, 106);
+    font-size: 10px;
+}
+
+
+/*------------------------
+----- Top selling Products 
+------------------------------*/
+.top-sells{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 2rem;
+    color: rgb(95, 95, 231);
+
+}
+.to-see{
+    text-align: right;
+    margin-top: 50px;
+    color: salmon;
+    margin-right: 8rem;
+
+}
+.to-see a{
+    text-decoration: none;
+    color: salmon;
+}
+
+.top-sell{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+  
+}
+.best-sells img:hover{
+    transform: scale(1);
+}
+.best-sells img{
+    margin-left: 4rem;
+    border-radius: 50%;
+    margin-top: 5rem;
+    width: 200px;
+    height: 200px;
+    transform: scale(0.9);
+    transition: all .6s;
+}
+.top-sell h1{
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+}
+.top-sell p{
+    text-transform:capitalize;
+    margin-right: 15px;
+}
+
+/* -------------
+footer 
+----------- ---*/
+footer{
+    margin: 50px 0px 0px 0px;
+    background-color: rosybrown;
+}
+#influence-copyrigth{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.footer-item-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.copyright p{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.site-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-icons {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+ul.iconlist {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+ul.iconlist .soicalicon {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    background: #ddd;
+}
+
+ul.iconlist .socialicon {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    place-items: center;
+    border-radius: 50%;
+    margin: 0px 7px;
+}
+
+ul.iconlist .socialicon a i {
+    font-size: 1.6rem;
+    color: #7e7e7e;
+}
+
+.footer-item-wrapper .copyright {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 2px 0px;
+}
+
+/*=====================
+ media query for mobile
+==================== */
+
+@media only screen and (max-width:688px){
+    
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .influencer-title {
+        text-align: left;
+    }
+    .welcome-part {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .welcome-image{
+    margin-top: 4rem;
+    margin-left: -2rem;
+
+    .welcome-part, .top-sell
+
+    }
+    .products{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        
+    }
+    .top-sell{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    footer {
+        margin: 11px 0px 0px 0px;
+    }
+
+}
+/*=====================
+ media query for Tablet
+==================== */
+
+@media only screen and (max-width:992px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .top-sell{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        text-align: center;
+    }
+    
+    footer {
+        margin: 100px 0px 0px 0px;
+    }
+
+
+
+
+}
